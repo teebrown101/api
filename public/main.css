@@ -1,0 +1,69 @@
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+
+body {
+	background: #282a36;
+	color: #50fa7b;
+	font: 14px/1.5 sans-serif;
+	padding: 2rem;
+	margin: auto;
+}
+
+::selection {
+	background-color: #50fa7b;
+	color: #282a36;
+}
+
+h1::selection {
+	background: rgb(211, 98, 255);
+	color: #282a36;
+}
+
+a:link,
+a:visited {
+	color: #8be9fd;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #f55;
+}
+
+img {
+	border: 1px solid #111;
+	width: 100%;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+pre {
+	margin-bottom: 1rem;
+	-webkit-user-select: all;
+	border: 1px solid #50fa7b;
+	cursor: pointer;
+	overflow: auto;
+	padding: 1rem;
+	user-select: all;
+}
+
+h1 {
+	margin-bottom: 1rem;
+	background: rgb(211, 98, 255);
+	color: #282a36;
+	padding: 0.5rem 1rem;
+}
+
+section {
+	margin-bottom: 2rem;
+}

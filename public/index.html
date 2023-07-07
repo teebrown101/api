@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+    <title>Anarchy API | Doc</title>
+  </head>
+  <body>
+    <section>
+      <h1>ANARCHY WEB API | Docs</h1>
+      <h2>USER API</h2>
+        <p>{_id, username, clientId,devicetype,manufacturer,osplatform,socialLogin[google,fb,email,apple], wallet, userType,activeclans,activeweapons,activeskins,friends,networktype ,walletAddress, lastLogin,createdAt, appversion, lastUpdate,gaididfa,ua,os}</p>
+      <hr>
+      <h3>Get all Users: method-GET</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/users</pre>
+
+      <h3>Get Single User: method-GET</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/users/:id</pre>
+
+      <h3>Create User: method-POST</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/users</pre>
+
+      <h3>Update User: method-PATCH</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/users/:id</pre>
+      
+    </section>
+
+    <section>
+      <h2>USERSTATS API</h2>
+      <p>
+        { username, userId, totalTimeSpent, totalDeaths, totalKills, totalTokens, lastMatchToken}
+      </p>
+      <hr>
+      <h3>Get all Userstats: method-GET</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userStats</pre>
+
+      <h3>Get Single Userstats: method-GET</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userStats/:id</pre>
+
+      <h3>Create Userstats: method-POST</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userStats</pre>
+
+      <h3>Update Userstats: method-PATCH</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userStats/:id</pre>
+      
+    </section>
+
+    <section>
+      <h2>USERINFO API</h2>
+      <p>
+        {username,userId,totalDeaths,totalkills,country,state,friends,totalplaytimeHrs,tokens,status,ip,devicetype,osversion,clans}
+      </p>
+      <hr>
+      <h3>Get all userInfo: method-GET</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userInfo</pre>
+
+      <h3>Get Single userInfo: method-GET</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userInfo/:id</pre>
+
+      <h3>Create userInfo: method-POST</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userInfo</pre>
+
+      <h3>Update userInfo: method-PATCH</h3>
+      
+      <pre>http://data.anarchygames.in/api/v1/userInfo/:id</pre>
+      
+    </section>
+
+    <section>
+        <h2>Logs API</h2>
+        <p>
+          {eventype,userId,data[matchId,playerCount]}
+        </p>
+        <hr>
+        <h3>Get all Logs: method-GET</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/Logs</pre>
+  
+        <h3>Get Single Logs: method-GET</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/Logs/:id</pre>
+  
+        <h3>Create Logs: method-POST</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/Logs</pre>
+  
+        <h3>Update Logs: method-PATCH</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/Logs/:id</pre>
+        
+      </section>
+    
+      <section>
+        <h2>Fblogin API</h2>
+        <p>
+          {user_Id,email}
+        </p>
+        <hr>
+        
+        <h3>Create Fblogin : method-POST</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/fblogin/create</pre>
+  
+        <h3>Deletion_Fbdata : method-POST</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/fblogin/delete</pre>
+
+        <h3>status_deletion_fbdata : method-GET</h3>
+        
+        <pre>http://data.anarchygames.in/api/v1/fblogin/get?id=${user_Id}</pre>
+
+
+        
+      </section>
+      
+
+  </body>
+</html>
+
